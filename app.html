@@ -46,13 +46,36 @@
         </nav>
         <!--Main Section-->
         <main class="flex-shrink-0" id="content">
-            <div class="container">
-                <h1>The App UI goes here</h1>
-                <form action="">
-                    <input type="text" id="message" placeholder="enter a message" required></input>
-                    <button id="btnSubmit" type="button"class="btn btn-outline-dark">Submit</button>
-                    <button id="btnSubmit2" type="button"class="btn btn-outline-dark">Swal</button>
-                </form>
+            <div class="container mt-5">
+              <div class="row row-cols-1">
+
+                <div class="col-6">
+                  <h1>Retrograde: A Coding Project</h1>
+                  <p class="lead">Onward to yesteryear. A javascript coding exercise using arrays. Write a program that displays a string in reverse. This project reverse a string using a decremented for loop.</p>
+                  <h3>Instructions</h3>
+                  <p>Enter a string and click the button to se it reversed.</p>
+                </div>
+                <div class="col-6">
+                  <h1>Enter a String</h1>
+                  <form class="row gx-3 gy-2">
+                    <div class="col-12">
+                      <input class="form-control" type="text" id="message" placeholder="enter 2 or more characters" required />
+                    </div>
+                    <div class="col-12">
+                      <div class="d-flex justify-content-end">
+                        <button id="btnSubmit" type="button"class="btn btn-outline-dark">Retrograde Me</button>
+                      </div>
+                      
+                    </div>
+                      
+                      
+                      
+                  </form>
+                  <hr>
+                  <p id="results"></p>
+                </div>
+              </div>
+                
             </div>
         </main>
         <!--Footer Section-->
@@ -89,8 +112,8 @@
         <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
         <script src="/js/site.js"></script>
         <script>
-            document.getElementById("btnSubmit").addEventListener("click", displayMessage);
-            document.getElementById("btnSubmit2").addEventListener("click", displayMessage2);
+            document.getElementById("btnSubmit").addEventListener("click", getString);
+            
         </script>
     
     </body>
