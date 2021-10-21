@@ -19,29 +19,30 @@
         <!--Nav Section-->
         <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
             <div class="container-fluid">
-              <a class="navbar-brand" href="#"><img src="/img/kp-mark-light3.svg" width="30"> Retrograde</a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                  <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="/index.html">Home</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="/app.html">The App</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link active" href="/code.html">The Code</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">The Repo</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" target = "_blank" href="https://kpittsportfolio.netlify.app/">About</a>
-                  </li>
-                </ul>
-              </div>
+                <a class="navbar-brand" href="/index.html"><img src="/img/kp-mark-light3.svg" width="50"> Retrograde </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="/index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="/app.html">The App</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/code.html">The Code</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://github.com/kvp06933/Rewind" target="_blank">The Repo</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" target = "_blank" href="https://katherinepitts.com">About</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </nav>
         <!--Main Section-->
@@ -97,33 +98,34 @@
                     <div class="col-12 col-lg-4">
                         <p>The Code is structured in three functions</p>
                         <h5>GetString</h5>
-                        <p class="nf">GetValues is the controller function. It pulls the user numbers from the UI and converts them to integers, if able. If the values cannot be parsed, an alert pops up to make sure only integer values are entered.</p>
-                        <p class="nf">If both values entered are integers, the functions generateNumbers and displayBeji are run.</p>
+                        <p>GetString is the controller function. It pulls the user's string from the UI.</p>
+                        <p>When the user value is read, the functions ReverseString and DisplayRetrograde are run.</p>
                         
                         <h5>ReverseString</h5>
-                        <p class="nf">GenerateNumbers is the logic function. It takes in the user values as start and end values. It initializes an empty array into a numbers variable.</p><p class="nf">A for loop runs that pushes each index value into the numbers array.</p><P>generateNumbers returns the numbers array.</P>
+                        <p>ReverseString is the logic function. It takes in the user input and runs it through a decrementing for loop. A startValue, endValue, and empty revString variable are initialized outside the loop. </p><p>RevString is updated to set it's index value to the inverse userString value. The reversed user string is returned by reverseString.</p>
 
                         <h5>DisplayRetrograde</h5>
-                        <p class="nf">DisplayBenji is the display function. It takes in the numbers array. It initializes a tableBody variable that stores the information in the tbody tag. The tableBody innerHTML is set as an empty string to clear the previous result.</p><p class="nf">A for loop looping through the numbers array initializes a number variable that stores the value of each numbers array element. It checks if the current element is even using an if-else statement.</p><p class="nf">If the value, evaluted using a modulus, is even, an evenDisplay class is added bolding and coloring the value printed. If the value is odd no class is added. At the end of the loop, a new tableRow is appended to the tableBody.</p>
+                        <p>DisplayRetrograde is the display function. It takes in the revString.</p><p>It targets a paragraph with the id "results", and updates the innerHTML to output revString.</p>
                     </div>
                 </div>
             </div>
         </main>
         <!--Footer Section-->
-        <footer class="footer sticky-footer mt-auto p-3">
+        <footer class="footer mt-auto p-3">
             <div class="container-fluid">
                 <div class="row row-cols-1 row-cols-lg-3 gy-2">
                     <div class="col order-last order-lg-first d-flex align-items-center">
-                        <div class="text-light"><span class="text-muted">&copy2021</span> Katherine Pitts | katherinevpitts@gmail.com</div>
+                        <div class="text-light"><span class="text-muted">&copy2021</span> Katherine Pitts |
+                            katherinevpitts@gmail.com</div>
                     </div>
                     <div class="col d-flex align-items-center justify-content-start justify-content-lg-center">
-                        <img src="/img/kp-logo-light.svg" height="24"alt="">
+                        <a href="http://www.katherinepitts.com" target="_blank"><img src="/img/kp-logo-light.svg" height="30" alt="Katherine Pitts portfolio link"></a>
                     </div>
                     <div class="col d-flex align-items-center justify-content-start justify-content-lg-center">
                         <div class="row">
-                            <div class="col social"><a href="#"><i class="fab fa-linkedin fa-2x"></i></a></div>
-                            <div class="col social"><a href="#"><i class="fab fa-twitter fa-2x"></i></a></div>
-                            <div class="col social"><a href="#"><i class="fab fa-github fa-2x"></i></a></div>
+                            <div class="col social"><a href="https://www.linkedin.com/in/katherine-pitts/" target="_blank"><i class="fab fa-linkedin fa-2x"></i></a></div>
+                            <div class="col social"><a href="https://twitter.com/katydevcodes" target="_blank"><i class="fab fa-twitter fa-2x"></i></a></div>
+                            <div class="col social"><a href="https://github.com/kvp06933" target="_blank"><i class="fab fa-github fa-2x"></i></a></div>
                         </div>
                     </div>
                 </div>
